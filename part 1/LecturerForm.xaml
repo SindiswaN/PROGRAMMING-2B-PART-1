@@ -1,0 +1,31 @@
+﻿<Window x:Class="CMCS.LecturerForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Submit Claim" Height="500" Width="600" Background="#F0F0F0">
+    <Grid>
+        <Label Content="Submit Your Monthly Claim" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="22" FontWeight="Bold" Foreground="#2E86C1" Margin="132,105,0,0"/>
+
+        <!-- Form Fields -->
+        <Label Content="Name:" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="50,30,0,0" FontWeight="Bold" Foreground="#2C3E50"/>
+        <TextBox Name="LecturerName" HorizontalAlignment="Left" VerticalAlignment="Center" Width="200" Margin="150,30,0,0"/>
+
+        <Label Content="Surname:" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="50,80,0,0" FontWeight="Bold" Foreground="#2C3E50"/>
+        <TextBox Name="LecturerSurname" HorizontalAlignment="Left" VerticalAlignment="Center" Width="200" Margin="150,80,0,0"/>
+
+        <Label Content="Date:" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="50,130,0,0" FontWeight="Bold" Foreground="#2C3E50"/>
+        <DatePicker Name="ClaimDate" HorizontalAlignment="Left" VerticalAlignment="Top" Width="190" Margin="150,294,0,0" Height="24"/>
+
+        <Label Content="Hours Worked:" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="50,180,0,0" FontWeight="Bold" Foreground="#2C3E50"/>
+        <TextBox Name="HoursWorked" HorizontalAlignment="Left" VerticalAlignment="Center" Width="200" Margin="150,180,0,0"/>
+
+        <Label Content="Hourly Rate:" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="50,230,0,0" FontWeight="Bold" Foreground="#2C3E50"/>
+        <TextBox Name="HourlyRate" HorizontalAlignment="Left" VerticalAlignment="Center" Width="200" Margin="150,230,0,0"/>
+
+        <Label Content="Supporting Document:" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="50,280,0,0" FontWeight="Bold" Foreground="#2C3E50"/>
+        <Button Content="Upload File" Width="120" Background="#1ABC9C" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="200,371,0,0" Click="UploadFile_Click"/>
+
+        <!-- Submit and Back Buttons -->
+        <Button Content="Submit Claim" Width="180" Height="30" Background="#2980B9" Foreground="White" FontSize="14" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,399,0,0" Click="SubmitClaim_Click" Style="{StaticResource RoundedButtonStyle}"/>
+        <Button Content="Back to Menu" Width="180" Height="30" Background="#BDC3C7" Foreground="Black" FontSize="14" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,444,0,0" Click="BackToMenu_Click" Style="{StaticResource RoundedButtonStyle}"/>
+    </Grid>
+</Window>
